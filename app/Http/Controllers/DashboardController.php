@@ -32,4 +32,14 @@ class DashboardController extends Controller
             'recentTasks'
         ));
     }
+
+    public function bladeTest()
+    {
+        return view('dashboard2');
+    }
+
+    public function bladeTest2()
+    {
+        return view('tasks.index');
+    }
 }
