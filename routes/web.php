@@ -19,14 +19,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 Route::middleware('auth')->group(function () {
-    ////Route::get('/tasks', [TaskController::class, 'index'])->name('tasks.index');
-    //Route::get('/tasks', [TaskController::class, 'task']);
-    // Route::post('/tasks', [TaskController::class, 'store'])->name('tasks.store');
-    // Route::get('/tasks/{task}/edit', [TaskController::class, 'edit'])->name('tasks.edit');
-    // Route::patch('/tasks/{task}/complete', [TaskController::class, 'complete'])->name('tasks.complete');
-    //Route::delete('/tasks/{task}', [TaskController::class, 'destroy']);
-    //Route::get('/tasks', [TaskController::class, 'tasks.edit']);
-    //Route::put('/tasks/{task}', [TaskController::class, 'update']);
+
     Route::get('/dashboard', [DashboardController::class, 'index'])
     ->middleware(['auth'])
     ->name('dashboard');
